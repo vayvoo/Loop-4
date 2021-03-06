@@ -1,0 +1,287 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*reset css above))*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 12px;
+    max-width: 1440px;
+    background: -webkit-linear-gradient(top, rgb(207, 221, 232) 0%, rgb(154, 182, 205) 80%, rgb(135, 165, 191) 99%, rgb(135, 135, 195) 100%);
+    height: 100vh;
+}
+.container{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6A96D8;
+    height: 50px;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.online-icon{
+    width: 5px;
+    height: 5px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.sender-name{
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+.close-icon{
+    margin: 10px;
+    opacity: 0.7;
+}
+.close-icon:hover{
+    margin: 10px;
+    opacity: 1;
+}
+.message-block{
+    width: 100%;
+    height: 450px;
+    background-color: #fff;
+    margin-top: 0;
+}
+.white-block{
+    padding: 15px;
+    position: relative;
+}
+.chat-date{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.chat-date::before{
+    content: '';
+    width: 100%;
+    border-bottom: solid 1px #000;
+    position: absolute;
+    opacity: 0.5;
+    left: 0;
+    top: 50%;
+    z-index: 0;
+}
+.today-text{
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 20px 0 20px;
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    color:#000;
+    opacity: 0.5;
+    z-index: 3;
+}
+.left-time{
+    margin-top: auto;
+    font-size: 12px;
+    color: #57585C;
+}
+.left-bubble{
+    width: 75%;
+    height: 50px;
+    margin: 10px 0;
+    background-color: #E6EDF6;
+}
+.chat-message{
+    padding: 10px;
+    line-height: 16px;
+    font-weight: 600;
+}
+.right-time{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #57585C;
+    position: absolute;
+    right: 15px;
+}
+.right-bubble{
+    width: 75%;
+    height: 50px;
+    margin-top: 30px;
+    position: absolute;
+    float: right;
+    background-color: #F2F2F2;
+    right: 15px;
+}
+.secondtime{
+    margin-top: 110px;
+}
+.second{
+    margin-top: 10px;
+}
+.danger{
+    width: auto;
+    margin-top: 10px;
+    background-color: #FFC2C1;
+}
+.danger .chat-message{
+    padding-top: 15px;
+}
+.second .chat-message{
+    padding-top: 15px;
+}
+.divider{
+    margin-top: 60px;
+    margin-left: 15px;
+    width: 92%;
+    border: 1px solid #000;
+    opacity: 0.1;
+}
+.footer-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.input-message{
+    border: 0;
+    height: 30px;
+}
+.input-message:focus{
+    outline: none;
+}
+.send-btn{
+    text-decoration: none;
+    color:#6A96D8;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}

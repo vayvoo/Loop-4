@@ -15,41 +15,46 @@
         <div class="online-icon"></div>
         <span class="sender-name">mark zuckerberg</span>
       </div>
-      <a href="#"><img class="close-icon" src="img/close.svg" alt="close-icon" ></a>
+      <button class="close-icon"></button>
     </header>
     <div class="message-block">
       <div class="white-block">
           <div class="chat-date">
             <span class="today-text">Today</span>
           </div>
-          <div class="left-time">
-            <span class="time-text">10:53</span>
+          <div class="left-message">
+            <time class="time-text">10:53</time>
+            
+            <div class="left-bubble">
+              <div class="left-say"></div>
+              <p class="chat-message">Hi, Mark! I made a new design for Messenger App. </p>
+            </div>
           </div>
-          <div class="left-bubble  first">
-            <p class="chat-message">Hi, Mark! I made a new design for Messenger App. </p>
+          <div class="right-message">
+            <span class="time-text-right">10:57</span>
+            <div class="right-bubble">
+              <div class="right-say"></div>
+              <p class="chat-message">Yo! Send it to my assistant and we'll review it during the year.</p>
+            </div>
           </div>
-          <div class="right-time">
-            <span class="time-text">10:57</span>
+          <div class="left-message">
+            <time class="time-text">11:03</time>
+            <div class="left-bubble">
+              <div class="left-say"></div>
+              <p class="chat-message">But, Mark... </p>
+            </div>
           </div>
-          <div class="right-bubble">
-            <p class="chat-message">Yo! Send it to my assistant and we'll review it during the year.</p>
-          </div>
-          <div class="left-time secondtime">
-            <span class="time-text">11:03</span>
-          </div>
-          <div class="left-bubble  second">
-            <p class="chat-message">But, Mark...</p>
-          </div>
-
-          <div class="right-bubble danger">
-            <p class="chat-message">You were blocked by the user.</p>
+          <div class="right-message">
+            <div class="right-bubble danger">
+              <p class="chat-message">You were blocked by the user.</p>
+            </div>
           </div>
       </div>
       <div class="divider"></div>
-      <footer class="footer-block">
-        <input class="input-message" name="message" placeholder="Send Message" type="text">
-        <a href="#" class="send-btn">Send</a>
-      </footer>
+        <form class="form-block" action="POST">
+          <input class="input-message" name="message" required placeholder="Send Message" type="text">
+          <button class="send-btn">Send</button>
+        </form>
     </div>
     
   </div>
